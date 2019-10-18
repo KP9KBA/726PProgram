@@ -1,2 +1,4 @@
 ﻿  zadaniya 8.cpp
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\zadaniya 8\zadaniya 8.cpp(65,9): warning C4101:  e: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\zadaniya 8\zadaniya 8.cpp(65,6): warning C4101:  d: неиспользованная локальная переменная
   zadaniya 8.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\Debug\zadaniya 8.exe
