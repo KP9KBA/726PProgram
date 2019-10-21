@@ -1,0 +1,5 @@
+﻿  Laba 6.cpp
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 6(1)\Laba 6\Laba 6\Laba 6.cpp(24,18): warning C4804:  <: небезопасное использование типа "bool" в операции
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 6(1)\Laba 6\Laba 6\Laba 6.cpp(88,12): warning C4244:  =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 6(1)\Laba 6\Laba 6\Laba 6.cpp(95,22): warning C4244:  =: преобразование "double" в "int", возможна потеря данных
+  Laba 6.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 6(1)\Laba 6\Debug\Laba 6.exe

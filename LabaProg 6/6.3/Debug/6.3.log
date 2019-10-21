@@ -1,0 +1,2 @@
+﻿  6.3.cpp
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 6\6.3\6.3.cpp(37,1): error C2857:  оператор "#include", указанный с параметром командной строки /Ycstdafx.h, не найден в исходном файле

@@ -1,0 +1,81 @@
+﻿#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "ru");
+	int a;
+	cout << "" << endl;
+	cin >> a;
+	switch (a) {
+	case 1: {
+		/*Дан номер дня – целое число от 1 до 31 и месяца — целое число в
+		диапазоне 1–12(1 — январь, 2 — февраль и т.д.).Вывести дату в виде текста
+		(например, «пятое января»).*/
+
+		int a, b; 
+		cout << "Введите дату" << endl;
+		cin >> a >> b;
+		if (a <= 31 && b <= 12) {
+			switch (a) {
+			case 1: { cout << "Первое" << endl; }
+			case 2: {cout << "Второе" << endl; }
+			case 3: { cout << "Третье" << endl; }
+			case 4: {cout << "Четвертое" << endl; }
+			case 5: { cout << "Пятое" << endl; }
+			case 6: {cout << "Шестое" << endl; }
+			case 7: { cout << "Седьмое" << endl; }
+			case 8: {cout << "Восьмое" << endl; }
+			case 9: { cout << "Девятое" << endl; }
+			case 10: {cout << "Десятое" << endl; }
+			case 11: { cout << "Одинадцатое" << endl; }
+			case 12: {cout << "Двенадцатое" << endl; }
+			case 13: { cout << "Тринадцатое" << endl; }
+			case 14: {cout << "Четырнадцатое" << endl; }
+			case 15: { cout << "Пятнадцатое" << endl; }
+			case 16: {cout << "Шестнадцатое" << endl; }
+			case 17: { cout << "Семнадцатое" << endl; }
+			case 18: {cout << "Восемнадцатое" << endl; }
+			case 19: { cout << "Девятнадцатое" << endl; }
+			case 20: {cout << "Двадцатое" << endl; }
+			case 21: { cout << "Двадцать первое" << endl; }
+			case 22: {cout << "Двадцать второе" << endl; }
+			case 23: { cout << "Двдацать третье" << endl; }
+			case 24: {cout << "Двадцать четвертое" << endl; }
+			case 25: { cout << "Двадцать пятое" << endl; }
+			case 26: {cout << "Двадцать шестое" << endl; }
+			case 27: { cout << "Двадцать седьмое" << endl; }
+			case 28: {cout << "Двадцать восьмое" << endl; }
+			case 29: { cout << "Двадцать девятое" << endl; }
+			case 30: {cout << "Тридцатое" << endl; }
+			case 31: {cout << "Тридцать первое" << endl; }
+
+			}
+			switch (b) {
+			case 1: {cout << "Января" << endl; }
+			case 2: {cout << "Февраля" << endl; }
+			case 3: {cout << "Марта" << endl; }
+			case 4: {cout << "Апреля" << endl; }
+			case 5: {cout << "Мая" << endl; }
+			case 6: {cout << "Июня" << endl; }
+			case 7: {cout << "Июля" << endl; }
+			case 8: {cout << "Августа" << endl; }
+			case 9: {cout << "Сентября" << endl; }
+			case 10: {cout << "Октября" << endl; }
+			case 11: {cout << "Ноября" << endl; }
+			case 12: {cout << "Декабря" << endl; }
+			}
+		}
+		else {
+			cout << "Такой даты нет))))0" << endl;
+		}
+		break;
+	}
+		
+	}
+
+
+
+
+
+	return 0;
+}

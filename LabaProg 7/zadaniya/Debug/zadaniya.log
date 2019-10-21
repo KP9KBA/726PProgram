@@ -1,7 +1,4 @@
 ﻿  zadaniya.cpp
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(7,9): warning C4101:  B: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(7,18): warning C4101:  E: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(7,15): warning C4101:  D: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(7,6): warning C4101:  A: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(7,12): warning C4101:  C: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(92,10): warning C4244:  =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\zadaniya\zadaniya.cpp(93,17): warning C4244:  =: преобразование "double" в "int", возможна потеря данных
   zadaniya.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 7\Debug\zadaniya.exe
