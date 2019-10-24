@@ -1,10 +1,2 @@
 ﻿  LabaProg 9.cpp
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(52,4): error C2059:  синтаксическая ошибка: }
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(67,3): error C2059:  синтаксическая ошибка: }
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(24,42): error C2059:  синтаксическая ошибка: ;
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(68,1): error C2181:  недопустимый else без парного if
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(71,3): error C2043:  недопустимый break
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(74,2): error C2059:  синтаксическая ошибка: }
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(74,2): error C2143:  синтаксическая ошибка: отсутствие ";" перед "}"
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(81,1): error C2059:  синтаксическая ошибка: }
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(81,1): error C2143:  синтаксическая ошибка: отсутствие ";" перед "}"
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 9\LabaProg 9\LabaProg 9.cpp(4): error C1075:  "{": не найдена несоответствующая лексема
