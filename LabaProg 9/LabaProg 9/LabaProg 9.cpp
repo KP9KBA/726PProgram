@@ -16,64 +16,61 @@ int main() {
 		cout << "Введите дату" << endl;
 		cin >> a >> b;
 		if (a <= 31 && a > 0 && b > 0 && b <= 12) {
-
-			if (a == 1) { cout << "Первое" << endl; }
-			if (a == 2) { cout << "Второе" << endl; }
-			if (a == 3) { cout << "Третье" << endl; }
-			if (a == 4) { cout << "Четвертое" << endl; }
-			if (a == 5) { cout << "Пятое" << endl; }
-			if (a == 6) { cout << "Шестое" << endl; }
-			if (a == 7) { cout << "Седьмое" << endl; }
-			if (a == 8) { cout << "Восьмое" << endl; }
-			if (a == 9) { cout << "Девятое" << endl; }
-			if (a == 10) { cout << "Десятое" << endl; }
-			if (a == 11) { cout << "Одинадцатое" << endl; }
-			if (a == 12) { cout << "Двенадцатое" << endl; }
-			if (a == 13) { cout << "Тринадцатое" << endl; }
-			if (a == 14) { cout << "Четырнадцатое" << endl; }
-			if (a == 15) { cout << "Пятнадцатое" << endl; }
-			if (a == 16) { cout << "Шестнадцатое" << endl; }
-			if (a == 17) { cout << "Семнадцатое" << endl; }
-			if (a == 18) { cout << "Восемнадцатое" << endl; }
-			if (a == 19) { cout << "Девятнадцатое" << endl; }
-			if (a == 20) { cout << "Двадцатое" << endl; }
-			if (a == 21) { cout << "Двадцать первое" << endl; }
-			if (a == 22) { cout << "Двадцать второе" << endl; }
-			if (a == 23) { cout << "Двдацать третье" << endl; }
-			if (a == 24) { cout << "Двадцать четвертое" << endl; }
-			if (a == 25) { cout << "Двадцать пятое" << endl; }
-			if (a == 26) { cout << "Двадцать шестое" << endl; }
-			if (a == 27) { cout << "Двадцать седьмое" << endl; }
-			if (a == 28) { cout << "Двадцать восьмое" << endl; }
-			if (a == 29) { cout << "Двадцать девятое" << endl; }
-			if (a == 30) { cout << "Тридцатое" << endl; }
-			if (a == 31) { cout << "Тридцать первое" << endl; }
-
-
-			if (b == 1) { cout << "Января" << endl; }
-			if (b == 2) { cout << "Февраля" << endl; }
-			if (b == 3) { cout << "Марта" << endl; }
-			if (b == 4) { cout << "Апреля" << endl; }
-			if (b == 5) { cout << "Мая" << endl; }
-			if (b == 6) { cout << "Июня" << endl; }
-			if (b == 7) { cout << "Июля" << endl; }
-			if (b == 8) { cout << "Августа" << endl; }
-			if (b == 9) { cout << "Сентября" << endl; }
-			if (b == 10) { cout << "Октября" << endl; }
-			if (b == 11) { cout << "Ноября" << endl; }
-			if (b == 12) { cout << "Декабря" << endl; }
-
+			if (a > 9 && a < 21 || a == 30) {
+				switch (a) {
+				case 10: { cout << "Десятое "; }break;
+				case 11: { cout << "Одинадцатое "; }break;
+				case 12: { cout << "Двенадцатое "; }break;
+				case 13: { cout << "Тринадцатое "; }break;
+				case 14: { cout << "Четырнадцатое "; }break;
+				case 15: { cout << "Пятнадцатое "; }break;
+				case 16: { cout << "Шестнадцатое "; }break;
+				case 17: { cout << "Семнадцатое "; }break;
+				case 18: { cout << "Восемнадцатое "; }break;
+				case 19: { cout << "Девятнадцатое "; }break;
+				case 20: {cout << "Двадцатое " << endl; }break;
+				case 30: {cout << "Тридцатое " << endl; }break;
+				}}else {
+				switch (a / 10) {
+				case 2: { cout << "Двадцать "; }break;
+				case 3: { cout << "Тридцать "; }break;
+				}
+				switch (a % 10) {
+				case 1: { cout << "Первое "; }break;
+				case 2: { cout << "Второе "; }break;
+				case 3: { cout << "Третье "; }break;
+				case 4: { cout << "Четвертое "; }break;
+				case 5: { cout << "Пятое "; }break;
+				case 6: { cout << "Шестое "; }break;
+				case 7: { cout << "Седьмое "; }break;
+				case 8: { cout << "Восьмое "; }break;
+				case 9: { cout << "Девятое "; }break;
+				}
+			}switch (b) {
+			case 1: { cout << "Января" << endl; }break;
+			case 2: { cout << "Февраля" << endl; }break;
+			case 3: { cout << "Марта" << endl; }break;
+			case 4: { cout << "Апреля" << endl; }break;
+			case 5: { cout << "Мая" << endl; }break;
+			case 6: { cout << "Июня" << endl; }break;
+			case 7: { cout << "Июля" << endl; }break;
+			case 8: { cout << "Августа" << endl; }break;
+			case 9: { cout << "Сентября" << endl; }break;
+			case 10: { cout << "Октября" << endl; }break;
+			case 11: { cout << "Ноября" << endl; }break;
+			case 12: { cout << "Декабря" << endl; }break;
+			}
 		}
 		else {
 			cout << "Такой даты нет))))0" << endl;
 		}
-	}
+	}break;
 	case 2: {/*Робот может перемещаться в четырех направлениях(«С» — север, «З» — запад, «Ю» — юг, «В» — восток) и принимать три цифровые команды :
 		0 — продолжать движение, 1 — поворот налево, −1 — поворот направо.
 		Дан символ C — исходное направление робота и целое число N — посланная ему команда.
 		Вывести направление робота после выполнения полученной команды*/
 
-		string C[4] = { "С","З","Ю","В" }, c; int n;
+		string C [4] = { "С","З","Ю","В" }, c; int n;
 		cout << "Введите направление робота" << endl;
 		cin >> c;
 		cout << "Введите команду робота" << endl;
@@ -133,7 +130,7 @@ int main() {
 		else {
 			cout << "ошибка" << endl;
 		}
-	}
+	}break;
 	case 3: {
 		/*Дано целое число в диапазоне 10–40, определяющее количество учебных заданий по некоторой теме.
 		Вывести строку-описание указанного количества заданий,
@@ -146,52 +143,117 @@ int main() {
 		if (10 <= a && a <= 40) {
 			if (a / 10 == 1) {
 				switch (a) {
-				case 10: cout << "десять учебных заданий" << endl;
-				case 11: cout << "однадцать учебных заданий" << endl;
-				case 12: cout << "двенадцать учебных заданий" << endl;
-				case 13: cout << "Тринадцать учебных заданий" << endl;
-				case 14: cout << "четырнадцать учебных заданий" << endl;
-				case 15: cout << "пятнадцать учебных заданий" << endl;
-				case 16: cout << "шестнадцать учебных заданий" << endl;
-				case 17: cout << "семнадцать учебных заданий" << endl;
-				case 18: cout << "восемнадцать учебных заданий" << endl;
-				case 19: cout << "девятнадцать учебных заданий" << endl;
+				case 10: cout << "десять учебных заданий"; break;
+				case 11: cout << "однадцать учебных заданий"; break;
+				case 12: cout << "двенадцать учебных заданий"; break;
+				case 13: cout << "Тринадцать учебных заданий"; break;
+				case 14: cout << "четырнадцать учебных заданий"; break;
+				case 15: cout << "пятнадцать учебных заданий"; break;
+				case 16: cout << "шестнадцать учебных заданий"; break;
+				case 17: cout << "семнадцать учебных заданий"; break;
+				case 18: cout << "восемнадцать учебных заданий"; break;
+				case 19: cout << "девятнадцать учебных заданий"; break;
 				}break;
 			}
 			switch (a / 10) {
-			case 2: cout << "двадцать " << endl;
-			case 3: cout << "тридцать " << endl;
-			case 4: cout << "сорок " << endl;
-			}break;
+			case 2: cout << "двадцать "; break;
+			case 3: cout << "тридцать "; break;
+			case 4: cout << "сорок "; break;
+			}
 
 			switch (a % 10) {
-			case 1: cout << "одно " << endl;
-			case 2: cout << "два " << endl;
-			case 3: cout << "три " << endl;
-			case 4: cout << "четыре " << endl;
-			case 5: cout << "пять " << endl;
-			case 6: cout << "шесть " << endl;
-			case 7: cout << "семь " << endl;
-			case 8: cout << "восемь " << endl;
-			case 9: cout << "девять " << endl;
+			case 1: cout << "одно "; break;
+			case 2: cout << "два "; break;
+			case 3: cout << "три "; break;
+			case 4: cout << "четыре "; break;
+			case 5: cout << "пять "; break;
+			case 6: cout << "шесть "; break;
+			case 7: cout << "семь "; break;
+			case 8: cout << "восемь "; break;
+			case 9: cout << "девять "; break;
 
-			}break;
+			}
 			switch (a % 10) {
-			case 0: cout << "учебных заданий" << endl;
-			case 1: cout << "учебное адание" << endl;
-			case 2: cout << "учебных задания" << endl;
-			case 3: cout << "учебных задания" << endl;
-			case 4: cout << "учебных задания" << endl;
-			case 5: cout << "учебных заданий" << endl;
-			case 6: cout << "учебных заданий" << endl;
-			case 7: cout << "учебных заданий" << endl;
-			case 8: cout << "учебных заданий" << endl;
-			case 9: cout << "учебных заданий" << endl;
+			case 0: cout << "учебных заданий"; break;
+			case 1: cout << "учебное задание"; break;
+			case 2: cout << "учебных задания"; break;
+			case 3: cout << "учебных задания"; break;
+			case 4: cout << "учебных задания"; break;
+			case 5: cout << "учебных заданий"; break;
+			case 6: cout << "учебных заданий"; break;
+			case 7: cout << "учебных заданий"; break;
+			case 8: cout << "учебных заданий"; break;
+			case 9: cout << "учебных заданий"; break;
 
-			}break;
+			}
 		}
+		else { cout << "Число вне указанного диапазона" << endl; }
+	}break;
+	case 4: {
+		/*Дано целое число в диапазоне 100–999. Вывести строку-описание данного числа, например: 256 — «двести пятьдесят шесть», 814 — «восемьсот четырнадцать».*/
+		int a;
+		cout << "Введите число" << endl;
+		cin >> a;
+		if (a > 99 && a < 1000) {
+			switch (a / 100) {
+			case 1: cout << "сто "; break;
+			case 2: cout << "двести "; break;
+			case 3: cout << "триста "; break;
+			case 4: cout << "четыреста"; break;
+			case 5: cout << "пятьсот "; break;
+			case 6: cout << "шестьсот "; break;
+			case 7: cout << "семьсот "; break;
+			case 8: cout << "восемьсот "; break;
+			case 9: cout << "девятьсот "; break;
+			}
+			switch ((a % 100) / 10) {
+			case 2: cout << "двадцать "; break;
+			case 3: cout << "тридцать "; break;
+			case 4: cout << "сорок "; break;
+			case 5: cout << "пятьдесят "; break;
+			case 6: cout << "шестьдесят "; break;
+			case 7: cout << "семьдесят "; break;
+			case 8: cout << "восемьдесят "; break;
+			case 9: cout << "девяносто "; break;
+			}
+			
+			switch (a % 10) {
+			case 1: cout << "один"; break;
+			case 2: cout << "два"; break;
+			case 3: cout << "три"; break;
+			case 4: cout << "четыре"; break;
+			case 5: cout << "пять"; break;
+			case 6: cout << "шесть"; break;
+			case 7: cout << "семь"; break;
+			case 8: cout << "восемь"; break;
+			case 9: cout << "девять"; break;
+			}
+			switch (a % 100) {
+			case 10: cout << "десять"; break;
+			case 11: cout << "одинадцать"; break;
+			case 12: cout << "двенадцать"; break;
+			case 13: cout << "ринадцать"; break;
+			case 14: cout << "четырнадцать"; break;
+			case 15: cout << "пятнадцать"; break;
+			case 16: cout << "шестнадцать"; break;
+			case 17: cout << "семьнадцать"; break;
+			case 18: cout << "восемьнадцать"; break;
+			case 19: cout << "девятнадцать"; break;
+			}
+		}
+		else { cout << "Число вне указанного диапазона" << endl; }
+	}break;
+	case 5: {
+		/*. В восточном календаре принят 60-летний цикл, состоящий из 12- летних подциклов, обозначаемых названиями цвета: зеленый, красный, желтый, белый и черный.
+		В каждом подцикле годы носят названия животных: крысы, коровы, тигра, зайца, дракона, змеи, лошади, овцы, обезьяны, курицы, собаки и свиньи.
+		По номеру года определить его название, если 1984 год — начало цикла: «год зеленой крысы».*/
+		
+		int n;
+		cout << "Введите год" << endl;
+		cin >> n;
 
-	}
+  	
+	}break;
 	}
 
 			return 0;
