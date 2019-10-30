@@ -70,66 +70,53 @@ int main() {
 		Дан символ C — исходное направление робота и целое число N — посланная ему команда.
 		Вывести направление робота после выполнения полученной команды*/
 
-		string C [4] = { "С","З","Ю","В" }, c; int n;
+		char C; int N;
 		cout << "Введите направление робота" << endl;
-		cin >> c;
+		cin >> C;//направления
 		cout << "Введите команду робота" << endl;
-		cin >> n;
-		if (c == C[0]) {
-			switch (n) {
-			case 0: {
-				cout << "Робот продолжает движение на север" << endl;
-			}break;
-			case 1: {
-				cout << "Робот поворачивает налево на север" << endl;
-			}break;
-			case (-1): {
-				cout << "Робот поворачивает направо на север" << endl;
-			}
-			}
-		}
-		if (c == C[1]) {
-			switch (n) {
-			case 0: {
-				cout << "Робот продолжает движение на запад" << endl;
-			}break;
-			case 1: {
-				cout << "Робот поворачивает налево на запад" << endl;
-			}break;
-			case (-1): {
-				cout << "Робот поворачивает направо на запад" << endl;
-			}
-			}
-		}
-		if (c == C[2]) {
-			switch (n) {
-			case 0: {
-				cout << "Робот продолжает движение на юг" << endl;
-			}break;
-			case 1: {
-				cout << "Робот поворачивает налево на юг" << endl;
-			}break;
-			case (-1): {
-				cout << "Робот поворачивает направо на юг" << endl;
-			}
-			}
-		}
-		if (c == C[3]) {
-			switch (n) {
-			case 0: {
-				cout << "Робот продолжает движение на восток" << endl;
-			}break;
-			case 1: {
-				cout << "Робот поворачивает налево на восток" << endl;
-			}break;
-			case (-1): {
-				cout << "Робот поворачивает направо на восток" << endl;
-			}
-			}
-		}
-		else {
-			cout << "ошибка" << endl;
-		}
+		cin >> N;//команда
+		switch (N)
+		{
+		case (-1): {
+			cout << "Новое направление робота ";
+			switch (C) {
+			case 'С': cout << "восток" << endl; break;
+			case 'c': cout << "восток" << endl; break;
+			case 'З': cout << "север" << endl; break;
+			case 'з': cout << "север" << endl; break;
+			case 'Ю': cout << "запад" << endl; break;
+			case 'ю': cout << "запад" << endl; break;
+			case 'В': cout << "юг" << endl; break;
+			case 'в': cout << "юг" << endl; break;
+			}}break;
+		case 0: {
+			cout << "Новое направление робота ";
+			switch (C) {
+			case 'С': cout << "север" << endl; break;
+			case 'c': cout << "север" << endl; break;
+			case 'З': cout << "запад" << endl; break;
+			case 'з': cout << "запад" << endl; break;
+			case 'Ю': cout << "юг" << endl; break;
+			case 'ю': cout << "юг" << endl; break;
+			case 'В': cout << "восток" << endl; break;
+			case 'в': cout << "восток" << endl; break;
+			}}break;
+		case 1: {
+			cout << "Новое направление робота ";
+			switch (C) {
+			case 'С': cout << "запад" << endl; break;
+			case 'c': cout << "запад" << endl; break;
+			case 'З': cout << "юг" << endl; break;
+			case 'з': cout << "юг" << endl; break;
+			case 'Ю': cout << "восток" << endl; break;
+			case 'ю': cout << "восток" << endl; break;
+			case 'В': cout << "север" << endl; break;
+			case 'в': cout << "север" << endl; break;
+			}}break;
+		default: cout << "Данные введены неверно" << endl;
+
+		}break;
+		
 	}break;
 	case 3: {
 		/*Дано целое число в диапазоне 10–40, определяющее количество учебных заданий по некоторой теме.
