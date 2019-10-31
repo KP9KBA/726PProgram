@@ -1,4 +1,5 @@
 ﻿  LabaProg 10.cpp
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 10\LabaProg 10\LabaProg 10.cpp(16,15): warning C4305: =: усечение из "double" в "float"
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 10\LabaProg 10\LabaProg 10.cpp(16,33): warning C4305: +=: усечение из "double" в "float"
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 10\LabaProg 10\LabaProg 10.cpp(66,16): warning C4101: i: неиспользованная локальная переменная
   LabaProg 10.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 10\Debug\LabaProg 10.exe
