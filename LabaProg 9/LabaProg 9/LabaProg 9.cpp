@@ -30,7 +30,9 @@ int main() {
 				case 19: { cout << "Девятнадцатое "; }break;
 				case 20: {cout << "Двадцатое " << endl; }break;
 				case 30: {cout << "Тридцатое " << endl; }break;
-				}}else {
+				}
+			}
+			else {
 				switch (a / 10) {
 				case 2: { cout << "Двадцать "; }break;
 				case 3: { cout << "Тридцать "; }break;
@@ -71,10 +73,11 @@ int main() {
 		Вывести направление робота после выполнения полученной команды*/
 
 		char C; int N;
-		cout << "Введите направление робота" << endl;
-		cin >> C;//направления
 		cout << "Введите команду робота" << endl;
 		cin >> N;//команда
+		cout << "Введите направление робота" << endl;
+		cin >> C;//направления
+
 		switch (N)
 		{
 		case (-1): {
@@ -116,7 +119,7 @@ int main() {
 		default: cout << "Данные введены неверно" << endl;
 
 		}break;
-		
+
 	}break;
 	case 3: {
 		/*Дано целое число в диапазоне 10–40, определяющее количество учебных заданий по некоторой теме.
@@ -203,7 +206,7 @@ int main() {
 			case 8: cout << "восемьдесят "; break;
 			case 9: cout << "девяносто "; break;
 			}
-			
+
 			switch (a % 10) {
 			case 1: cout << "один"; break;
 			case 2: cout << "два"; break;
@@ -234,14 +237,41 @@ int main() {
 		/*. В восточном календаре принят 60-летний цикл, состоящий из 12- летних подциклов, обозначаемых названиями цвета: зеленый, красный, желтый, белый и черный.
 		В каждом подцикле годы носят названия животных: крысы, коровы, тигра, зайца, дракона, змеи, лошади, овцы, обезьяны, курицы, собаки и свиньи.
 		По номеру года определить его название, если 1984 год — начало цикла: «год зеленой крысы».*/
-		
-		int n;
+
+		int n, k, f;
 		cout << "Введите год" << endl;
 		cin >> n;
-
-  	
+		k = (n)%5;
+		switch (k) { 
+		case 0:cout << "год бел"; break;
+		case 1:cout << "год бел"; break;
+		case 2:cout << "год черн"; break;
+		case 3:cout << "год черн"; break;
+		case 4:cout << "год зелен"; break;
+		case 5:cout << "год зелен"; break;
+		case 6:cout << "год красн"; break;
+		case 7:cout << "год красн"; break;
+		case 8:cout << "год желт"; break;
+		case 9:cout << "год желт"; break;
+         }
+		f = (n/60) % 12;
+		switch (f) {
+		case 0:cout << "ой крысы" << endl; break;
+		case 1:cout << "ой коровы" << endl; break;
+		case 2:cout << "ого тигра" << endl; break;
+		case 3:cout << "ого зайца" << endl; break;
+		case 4:cout << "ого дракона" << endl; break;
+		case 5:cout << "ой змеи" << endl; break;
+		case 6:cout << "ой лошади" << endl; break;
+		case 7:cout << "ой овцы" << endl; break;
+		case 8:cout << "ой обезьяны" << endl; break;
+		case 9:cout << "ой курицы" << endl; break;
+		case 10:cout << "ой собаки" << endl; break;
+		case 11:cout << "ой свиньи" << endl; break;
+		}
 	}break;
+	default:cout << "Неправильный номер задания" << endl;
 	}
 
-			return 0;
-	}
+	return 0;
+}
