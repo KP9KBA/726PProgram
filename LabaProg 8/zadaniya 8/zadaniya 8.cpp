@@ -61,11 +61,11 @@ int main() {
 		AB = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
 		AC = sqrt(pow((x2 - x1), 2) + pow((y3 - y1), 2));
 		if (AB > AC) {
-			cout << "" << B << (x2, y2) << "" << AB << endl;
+			cout << "" << B << "" << AB << endl;
 		}
 		else {
-			cout << "" << C << (x3, y3) << "" << AC << endl;
-		}
+			cout << "" << C << "" << AC << endl;
+		}//исправить вывод(не скомпелируется
 
 		//Используются не коордиинаты
 		/*int d, e;
