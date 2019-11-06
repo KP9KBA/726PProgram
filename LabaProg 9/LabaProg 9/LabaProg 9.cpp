@@ -28,8 +28,8 @@ int main() {
 				case 17: { cout << "Семнадцатое "; }break;
 				case 18: { cout << "Восемнадцатое "; }break;
 				case 19: { cout << "Девятнадцатое "; }break;
-				case 20: {cout << "Двадцатое " << endl; }break;
-				case 30: {cout << "Тридцатое " << endl; }break;
+				case 20: {cout << "Двадцатое "; }break;
+				case 30: {cout << "Тридцатое "; }break;
 				}
 			}
 			else {
@@ -62,6 +62,7 @@ int main() {
 			case 11: { cout << "Ноября" << endl; }break;
 			case 12: { cout << "Декабря" << endl; }break;
 			}
+
 		}
 		else {
 			cout << "Такой даты нет))))0" << endl;
@@ -72,53 +73,21 @@ int main() {
 		Дан символ C — исходное направление робота и целое число N — посланная ему команда.
 		Вывести направление робота после выполнения полученной команды*/
 
-		char C; int N;
+		/*string C_chars[4] = { "n", "e", "s", "w" }, c; int N;
+		string C_name[4] = { "север","запад","юг","восток" };
 		cout << "Введите команду робота" << endl;
 		cin >> N;//команда
 		cout << "Введите направление робота" << endl;
-		cin >> C;//направления
+		cin >> c;//направления
 
-		switch (N)
-		{
-		case (-1): {
-			cout << "Новое направление робота ";
-			switch (C) {
-			case 'С': cout << "восток" << endl; break;
-			case 'c': cout << "восток" << endl; break;
-			case 'З': cout << "север" << endl; break;
-			case 'з': cout << "север" << endl; break;
-			case 'Ю': cout << "запад" << endl; break;
-			case 'ю': cout << "запад" << endl; break;
-			case 'В': cout << "юг" << endl; break;
-			case 'в': cout << "юг" << endl; break;
-			}}break;
-		case 0: {
-			cout << "Новое направление робота ";
-			switch (C) {
-			case 'С': cout << "север" << endl; break;
-			case 'c': cout << "север" << endl; break;
-			case 'З': cout << "запад" << endl; break;
-			case 'з': cout << "запад" << endl; break;
-			case 'Ю': cout << "юг" << endl; break;
-			case 'ю': cout << "юг" << endl; break;
-			case 'В': cout << "восток" << endl; break;
-			case 'в': cout << "восток" << endl; break;
-			}}break;
-		case 1: {
-			cout << "Новое направление робота ";
-			switch (C) {
-			case 'С': cout << "запад" << endl; break;
-			case 'c': cout << "запад" << endl; break;
-			case 'З': cout << "юг" << endl; break;
-			case 'з': cout << "юг" << endl; break;
-			case 'Ю': cout << "восток" << endl; break;
-			case 'ю': cout << "восток" << endl; break;
-			case 'В': cout << "север" << endl; break;
-			case 'в': cout << "север" << endl; break;
-			}}break;
-		default: cout << "Данные введены неверно" << endl;
-
+		switch (N) {
+		case C_chars[c]: cout<<C_name[]
 		}break;
+		*/
+		string C;int N, k;
+		cout << "" << endl;
+		cin >> C;
+		cout << "" << endl;
 
 	}break;
 	case 3: {
@@ -237,29 +206,31 @@ int main() {
 		/*. В восточном календаре принят 60-летний цикл, состоящий из 12- летних подциклов, обозначаемых названиями цвета: зеленый, красный, желтый, белый и черный.
 		В каждом подцикле годы носят названия животных: крысы, коровы, тигра, зайца, дракона, змеи, лошади, овцы, обезьяны, курицы, собаки и свиньи.
 		По номеру года определить его название, если 1984 год — начало цикла: «год зеленой крысы».*/
-
-		int n, k, f;
+		/*int k, b, c, n;
+		string arr1[5] = { "год зелен","год красн","год желт","год бел","год черн" }, arr2[12] = { "ой крысы","ой коровы","ого тигра","ого зайца","ого дракона","ой змеи","ой ошади","ой овцы","ой обезьяны","ой курицы","ой собаки","ой свиньи"};
 		cout << "Введите год" << endl;
 		cin >> n;
-		k = (n)%5;
+		k = (n - 1984);
+		b = k % 5;
+		c = k % 12;                                //ЭТО МАССИВАМИ
+		cout << arr1[b] << arr2[c] << endl;*/
+		/*int n, k, f;
+		cout << "Введите год" << endl;
+		cin >> n;
+		k = (n-1984)%5;
 		switch (k) { 
-		case 0:cout << "год бел"; break;
-		case 1:cout << "год бел"; break;
-		case 2:cout << "год черн"; break;
-		case 3:cout << "год черн"; break;
-		case 4:cout << "год зелен"; break;
-		case 5:cout << "год зелен"; break;
-		case 6:cout << "год красн"; break;
-		case 7:cout << "год красн"; break;
-		case 8:cout << "год желт"; break;
-		case 9:cout << "год желт"; break;
+		case 3:cout << "год бел"; break;
+		case 4:cout << "год черн"; break;
+		case 0:cout << "год зелен"; break;
+		case 1:cout << "год красн"; break;
+		case 2:cout << "год желт"; break;
          }
-		f = (n/60) % 12;
+		f = (n-1984) % 12;
 		switch (f) {
 		case 0:cout << "ой крысы" << endl; break;
 		case 1:cout << "ой коровы" << endl; break;
 		case 2:cout << "ого тигра" << endl; break;
-		case 3:cout << "ого зайца" << endl; break;
+		case 3:cout << "ого зайца" << endl; break;          //ЭТО КЕСАМИ
 		case 4:cout << "ого дракона" << endl; break;
 		case 5:cout << "ой змеи" << endl; break;
 		case 6:cout << "ой лошади" << endl; break;
@@ -268,7 +239,7 @@ int main() {
 		case 9:cout << "ой курицы" << endl; break;
 		case 10:cout << "ой собаки" << endl; break;
 		case 11:cout << "ой свиньи" << endl; break;
-		}
+		}*/
 	}break;
 	default:cout << "Неправильный номер задания" << endl;
 	}

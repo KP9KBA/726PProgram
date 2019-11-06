@@ -1,4 +1,4 @@
 ﻿  zadaniya 8.cpp
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\zadaniya 8\zadaniya 8.cpp(60,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\zadaniya 8\zadaniya 8.cpp(61,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\zadaniya 8\zadaniya 8.cpp(62,12): warning C4244: =: преобразование "double" в "int", возможна потеря данных
   zadaniya 8.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 8\Debug\zadaniya 8.exe
