@@ -52,8 +52,8 @@ int main() {
 		cout << "Введите число N" << endl;
 		cin >> N;
 		if (N > 0) {
-			for (i = 0; N > i; N--) {
-				C += pow(A,N) ; 
+			for (i = 0; N >= i; i++) {
+				C += pow(A,i) ; 
 				
 			}
 		}cout << "Сумма этих чисел " << C << endl;
@@ -63,14 +63,14 @@ int main() {
 	/*Дано вещественное число A и целое число N (> 0). Используя один цикл, найти значение выражения 
 1 − A + A^2 − A^3 + . . . ± A^N .
 Условный оператор не использовать. (if() || switch() || тернарный оператор*/
-		double A, N, i = 1, C = -1, pow = 1, sum = 1;
+		double A, N, i = 1, pow = 1, sum = 1;
 		cout << "Введите число A" << endl;
 		cin >> A;
 		cout << "Введите число N" << endl;
 		cin >> N;
-		for (i; i <= N; i++) {
+		for (; i <= N; i++) {
 			pow *= A;
-			pow *= C;
+			pow *= -1;
 			sum += pow;
 		}
 		cout << "Результат " << sum << endl;

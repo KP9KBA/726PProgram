@@ -73,21 +73,35 @@ int main() {
 		Дан символ C — исходное направление робота и целое число N — посланная ему команда.
 		Вывести направление робота после выполнения полученной команды*/
 
-		/*string C_chars[4] = { "n", "e", "s", "w" }, c; int N;
-		string C_name[4] = { "север","запад","юг","восток" };
+		string s;
+		int K;
+		char c;
+		int dir;
 		cout << "Введите команду робота" << endl;
-		cin >> N;//команда
-		cout << "Введите направление робота" << endl;
+		cin >> K;//команда
+		cout << "Введите направление робота N-север W - запад S - юг  E - восток" << endl;
 		cin >> c;//направления
-
-		switch (N) {
-		case C_chars[c]: cout<<C_name[]
-		}break;
-		*/
-		string C;int N, k;
-		cout << "" << endl;
-		cin >> C;
-		cout << "" << endl;
+		switch (c) {
+		case 'N': dir = 1; break;
+		case 'W': dir = 2; break;
+		case 'S': dir = 3; break;
+		case 'E': dir = 4; break;
+		}
+		switch (K) {
+		case 0: cout << s; break;
+		case 1: dir ++; break;
+		case -1: dir--; break;
+		default: cout << "неправильная команда";
+		}
+		if (dir < 0) dir = 4;
+		if (dir > 4)dir = 0;
+		switch (dir) {
+		case 1: s = "север"; cout << s; break;
+		case 2:s = "запад"; cout << s; break;
+		case 3:s = "Юг"; cout << s; break;
+		case 4:s = "Восток"; cout << s; break;
+		}
+		
 
 	}break;
 	case 3: {
@@ -206,15 +220,16 @@ int main() {
 		/*. В восточном календаре принят 60-летний цикл, состоящий из 12- летних подциклов, обозначаемых названиями цвета: зеленый, красный, желтый, белый и черный.
 		В каждом подцикле годы носят названия животных: крысы, коровы, тигра, зайца, дракона, змеи, лошади, овцы, обезьяны, курицы, собаки и свиньи.
 		По номеру года определить его название, если 1984 год — начало цикла: «год зеленой крысы».*/
-		/*int k, b, c, n;
+		int k, b, c, n;
 		string arr1[5] = { "год зелен","год красн","год желт","год бел","год черн" }, arr2[12] = { "ой крысы","ой коровы","ого тигра","ого зайца","ого дракона","ой змеи","ой ошади","ой овцы","ой обезьяны","ой курицы","ой собаки","ой свиньи"};
 		cout << "Введите год" << endl;
 		cin >> n;
 		k = (n - 1984);
 		b = k % 5;
 		c = k % 12;                                //ЭТО МАССИВАМИ
-		cout << arr1[b] << arr2[c] << endl;*/
-		/*int n, k, f;
+		cout << arr1[b] << arr2[c] << endl;
+		//ЭТО КЕСАМИ
+		 /*int n, k, f;
 		cout << "Введите год" << endl;
 		cin >> n;
 		k = (n-1984)%5;
@@ -230,7 +245,7 @@ int main() {
 		case 0:cout << "ой крысы" << endl; break;
 		case 1:cout << "ой коровы" << endl; break;
 		case 2:cout << "ого тигра" << endl; break;
-		case 3:cout << "ого зайца" << endl; break;          //ЭТО КЕСАМИ
+		case 3:cout << "ого зайца" << endl; break;         
 		case 4:cout << "ого дракона" << endl; break;
 		case 5:cout << "ой змеи" << endl; break;
 		case 6:cout << "ой лошади" << endl; break;
@@ -239,7 +254,7 @@ int main() {
 		case 9:cout << "ой курицы" << endl; break;
 		case 10:cout << "ой собаки" << endl; break;
 		case 11:cout << "ой свиньи" << endl; break;
-		}*/
+		}*/  //ЭТО КЕСАМИ
 	}break;
 	default:cout << "Неправильный номер задания" << endl;
 	}
