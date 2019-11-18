@@ -1,27 +1,57 @@
 ﻿#include <iostream>
 #include <ctime>
+#include <locale.h>
 using namespace std;
 #define N 15
 int main() {
 	setlocale(LC_ALL, "rus");
 	srand(time(0));
 	int a;
-	cout << "" << endl;
+	cout << "Введите номер задания" << endl;
 	cin >> a;
 	switch (a) {
 	case 1: {
 		/*Дан целочисленный массив размера N. Удалить из массива все соседние одинаковые элементы, оставив их первые вхождения.*/
-		int a[N];
+		/*int a[N], b[N];
 		int i, j;
 		for (i = 0; i <= N - 1; i++) {
 			a[i] = rand() % 50 - 25;
-			printf("%d ", a[i]);Ы
-
+			printf("%d ", a[i]);
+		}
+		printf("\n");
+		for (i = 0; i < N;i++) {
+			for (int j = i + 1; j < N - 1; j++) {
+				if (a[i] != a[j]) {
+					b[i] = a[i];
+				}
+			}
+		}
+		for (i = 0; i <= N - 1; i++) {
+		    printf("%d ", a[i]);
+		}*/
+		int a[N]; //= { 5,5,6,2,1,9,10,8,8,7,11,2,3,6,9 };
+		int i, j;
+		int b[N] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
+		for (i = 0; i < N; i++) {
+			printf("Введите элемент массива a[%d]", i);
+			scanf_s("%d", &a[i]);
+		}
+		for (i = 0; i < N; i++) {
+			if (a[i] != a[i + 1]) {
+				b[i] = a[i];
+			}
+		}
+		for (i = 0; i < N; i++) {
+			if (b[i] != 0) {
+				printf("%d ", b[i]);
+			}
+		}
 
 	} break;
 	case 2: {
 		/*Дан целочисленный массив размера N. Удалить из массива все элементы, 
 		встречающиеся ровно два раза, и вывести размер полученного массива и его содержимое.*/
+
 
 	} break;
 	case 3: {
