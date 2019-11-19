@@ -1,8 +1,6 @@
 ﻿  LabaProg 12.cpp
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(93,18): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(93,14): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(67,13): warning C4101: B: неиспользованная локальная переменная
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(78,10): warning C4101: x: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(12): warning C4715: Sign: значение возвращается не при всех путях выполнения
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(38): warning C4715: Quarter: значение возвращается не при всех путях выполнения
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\LabaProg 12\LabaProg 12.cpp(11): warning C4715: Sign: значение возвращается не при всех путях выполнения
   LabaProg 12.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 12\Debug\LabaProg 12.exe

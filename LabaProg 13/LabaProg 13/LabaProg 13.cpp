@@ -101,9 +101,10 @@ int main() {
 			printf("%d ", A[i]);
 		}
 		printf("\n");
-		for (i = 0; i <= N-1; i++) {
+		for (i = 0; i <= N; i++) {
 			if (i % 2 != 0) {
 				printf("%d ", A[i]);
+				
 			}
 		}
 		for (i = 0; i <= N-1; i++) {

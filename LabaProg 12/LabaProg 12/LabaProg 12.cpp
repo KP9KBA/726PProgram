@@ -1,22 +1,21 @@
 ﻿#include <iostream>
 using namespace std;
 
-double PowerA3( double A, double B) {
+void PowerA3( double A, double& B) {//задание 1
 	 B = pow(A, 3);
-	 return B;
 }
-double Sign(double x) {
+double Sign(double x) {//задание 2
 	if (x == 0) return 0;
 	if (x > 0)return 1;
 	if (x < 0)return -1;
 }
-double RingS(int R1, int R2) {
+double RingS(int R1, int R2) {//задание 3
 	if (R1 > R2) {
 		return 3.14 * (pow(R1, 2) - pow(R2, 2));
 	}
 	else return 3.14 * (pow(R2, 2) - pow(R1, 2));
 }
-int Quarter(int x, int y) {
+int Quarter(int x, int y) {//задание 4
 	if (x > 0) {
 		if (y > 0) {
 			return 1;
@@ -26,17 +25,17 @@ int Quarter(int x, int y) {
 		}
 	}
 	else {
-		if (x < 0) {
+	
 			if (y > 0) {
 				return 2;
 			}
 			else {
 				return 3;
 			}
-		}
+		
 	}
 }
-long double Fact2(int N) {
+long double Fact2(int N) {//задание 5
 	int i, n=1;
 	if (N < 0) return 0;
 	if (N == 1) return 1;
@@ -64,11 +63,12 @@ int main() {
 	/*Описать функцию PowerA^3(A, B), вычисляющую третью степень числа A и возвращающую ее в переменной B
 	(A — входной, B — выходной параметр; оба параметра являются вещественными).
 	С помощью этой функции найти третьи степени пяти данных чисел.*/
-		double A, B;
+		double A, B=0;
 		for (int i = 0; i <= 4; i++) {
 			cout << "Введите число" << endl;
 			cin >> A;
-			cout << A <<"^3 = "<< PowerA3(A, A) << endl;
+			PowerA3(A,B);
+			cout << A <<"^3 = "<< B << endl;
 		}
 	}break;
 	case 2: {
