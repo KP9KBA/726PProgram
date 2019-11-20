@@ -1,4 +1,6 @@
 ﻿  LabaProg 16.cpp
 C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\LabaProg 16\LabaProg 16.cpp(8,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\LabaProg 16\LabaProg 16.cpp(33,10): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\LabaProg 16\LabaProg 16.cpp(18,7): warning C4101: c: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\LabaProg 16\LabaProg 16.cpp(17,10): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\LabaProg 16\LabaProg 16.cpp(82,10): warning C4101: j: неиспользованная локальная переменная
   LabaProg 16.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 16\Debug\LabaProg 16.exe

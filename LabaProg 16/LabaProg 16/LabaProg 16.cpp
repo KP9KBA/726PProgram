@@ -2,7 +2,7 @@
 #include <ctime>
 #include <locale.h>
 using namespace std;
-#define N 15
+
 int main() {
 	setlocale(LC_ALL, "rus");
 	srand(time(0));
@@ -12,52 +12,124 @@ int main() {
 	switch (a) {
 	case 1: {
 		/*Дан целочисленный массив размера N. Удалить из массива все соседние одинаковые элементы, оставив их первые вхождения.*/
-		/*int a[N], b[N];
+		const int N = 5;
+		int* a = new int [N]; //= { 5,5,6,2,1,9,10,8,8,7,11,2,3,6,9 };
 		int i, j;
-		for (i = 0; i <= N - 1; i++) {
-			a[i] = rand() % 50 - 25;
-			printf("%d ", a[i]);
-		}
-		printf("\n");
-		for (i = 0; i < N;i++) {
-			for (int j = i + 1; j < N - 1; j++) {
-				if (a[i] != a[j]) {
-					b[i] = a[i];
-				}
-			}
-		}
-		for (i = 0; i <= N - 1; i++) {
-		    printf("%d ", a[i]);
-		}*/
-		int a[N]; //= { 5,5,6,2,1,9,10,8,8,7,11,2,3,6,9 };
-		int i, j;
-		int b[N] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
+		int c, k = 0;
+		//int b[N] = { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
 		for (i = 0; i < N; i++) {
 			printf("Введите элемент массива a[%d]", i);
 			scanf_s("%d", &a[i]);
 		}
 		for (i = 0; i < N; i++) {
-			if (a[i] != a[i + 1]) {
+			/*if (a[i] != a[i + 1]) {
 				b[i] = a[i];
+			}*/
+			if (a[i] == a[i + 1]) {              //КАК Я ВСЕ НЕНАВИЖУ!
+				delete &a[i]; 
 			}
 		}
 		for (i = 0; i < N; i++) {
-			if (b[i] != 0) {
+			/*if (b[i] != 0) {
 				printf("%d ", b[i]);
-			}
+			}*/
+			printf("%d ", a[i]);
 		}
-
+		
 	} break;
 	case 2: {
 		/*Дан целочисленный массив размера N. Удалить из массива все элементы, 
 		встречающиеся ровно два раза, и вывести размер полученного массива и его содержимое.*/
+		int arr[12];
+		int count = 0;
+		int i, j, a;
+		int N = 12;
+		for (i = 0; i < N; i++) {
+				printf("Введите элемент массива a[%d]", i);
+				scanf_s("%d", &arr[i]);
+		}
 
+		for (i = 0; i < N; i++)
+		{
+			for (j = 1; j < N; j++)
+			{
+				if (arr[i] == arr[j])
+					count++;
+			}
+			if (count == 2)
+			{
+				for (a = i; a < N; a++)
+				{
+					arr[a] = arr[a + 2];
+				}
+				N = N - 2;
+				i--;
+			}
+			count = 0;
+		}
+
+			for (i = 0; i < N; i++)
+				printf("%d ", arr[i]);
+			
+		
 
 	} break;
 	case 3: {
 		/*Дан массив размера N. Вставить элемент с нулевым значением 
 		перед минимальным и после максимального элемента массива.*/
+		const int N = 15;
+		int arr[N];
+		int i, j;
+		int max, min, maxi=0, mini = 0;
+		for (i = 0; i < N; i++) {
+			arr[i] = rand() % 50 - 25;
+			printf("%d ", arr[i]);
+		}
+		printf("\n");
+		min = arr[0]; max = arr[0];
+		for (i = 0; i < N; i++) {
+				if (arr[i] < min) {
+					min = arr[i];
+					mini = i;
+				}
+				if (arr[i] > max) {
+					max = arr[i];
+					maxi = i;
+				}
+			
+		}
+		/*if (mini > maxi) {
 
+			for (i = maxi; i < N-1; i++) {
+				arr[i] = arr[i++];
+				arr[maxi] = 0;
+			}
+			for (i = mini; i < N-1; i++) {
+				arr[i] = arr[i+1];
+				arr[mini-1] = 0;
+			}
+			
+		}
+		/*if (maxi > mini) {
+			for (i = mini; i < N-1; i++) {
+				arr[i] = arr[i+1];
+				arr[mini+1] = 0;
+			}
+			for (i = maxi-1; i < N-1; i++) {
+				arr[i] = arr[i++];
+				arr[maxi+1] = 0;
+			}
+		}*/
+		for (i = N; i >= mini; i--) {
+			arr[i] = arr[i - 1];
+			arr[mini] = 0;
+		}
+		for (i = N; i >= maxi + 2; i--) {
+			arr[i] = arr[i - 1];
+			arr[maxi + 1] = 0;
+		}
+		for (i = 0; i < N; i++)
+			printf("%d ", arr[i]);
 	} break;
 	case 4: {
 		/*Дан массив размера N. После каждого отрицательного элемента массива вставить элемент с нулевым значением.*/

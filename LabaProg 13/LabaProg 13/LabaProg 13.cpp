@@ -111,11 +111,18 @@ int main() {
 			printf("%d ", A[i]);
 		}
 		printf("\n");
-		for (i = 1; i < N-1; i+=2) {
+		for (i = 1; i < N; i+=2) {
 				printf("%d ", A[i]);	
 		}
-		for (i = N - 1; i >= 0; i-=2) {
-			printf("%d ", A[i]);
+		if (N % 2 == 0) {
+			for (i = N - 2; i >= 0; i -= 2) {
+				printf("%d ", A[i]);
+			}
+		}
+		else {
+			for (i = N - 1; i >= 0; i -= 2) {
+				printf("%d ", A[i]);
+			}
 		}
 
 	}break;
