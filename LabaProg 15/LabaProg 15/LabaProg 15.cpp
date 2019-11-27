@@ -86,7 +86,7 @@ int main() {
 			if (A[i] % 2 != 0) {
 				A[i] += max;
 			}
-				printf("%d   ", A[i]);
+				printf("%d  ", A[i]);
 		}
 	}break;
 	case 4: {

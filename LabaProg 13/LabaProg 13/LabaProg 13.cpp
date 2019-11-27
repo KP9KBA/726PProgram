@@ -60,17 +60,20 @@ int main() {
 		cin >> A;
 		cout << "Второй элемент массива" << endl;
 		cin >> B;
-		
+		int n[100];
 		if (N > 2) {
-			int n[100];
+			
 			n[0] = A; n[1] = B;
-			for (i = 2; i <= N + 1; i++) {
+			n[2] = n[0] + n[1];
+			for (i = 3; i <= N + 1; i++) {
 
-				n[i] = n[i-2]+n[i-1];
-				printf("%d ", n[i]);
+				n[i] = 2*n[i-1];
 			}
 		}
 		else cout << "Неверное число" << endl;
+		for (i = 0; i < N; i++) {
+			printf("%d ", n[i]);
+		}
 
 	}break;
 	case 4: {
