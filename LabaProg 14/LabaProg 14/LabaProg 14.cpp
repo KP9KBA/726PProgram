@@ -12,23 +12,25 @@ int main() {
 		/*Дан массив размера N и целые числа K и L (1 ≤ K ≤ L ≤ N).
 		Найти среднее арифметическое элементов массива с номерами от K до L включительно.*/
 		int a[100], K, L, N, i;
-		int n = 0, d = 0;
+		int  d = 0;
+		double n = 0;
 		cout << "Введите размер массива" << endl;
-		cin >> N;
-		cout << "Введите число К" << endl;
-		cin >> K;
-		cout << "Введите число L" << endl;
-		cin >> L;
+		cin >> N; 
+		cout << " ";
 		for (i = 0; i <= N - 1; i++) {
 			a[i] = rand() % 50 - 25;
 			cout << a[i] << " ";
 		}
 		cout << " ";
-		if(1 <= K <= L <= N)
+		cout << "Введите число К" << endl;
+		cin >> K;
+		cout << "Введите число L" << endl;
+		cin >> L;
+		
 			for (i = K; i <= L;i++) {
 				n = n + a[i];
 				d++;
-			}
+			}//исправить
 		cout << "Среднее арифмитическое чисел массива равно " << n / d << endl;
 	}break;
 	case 2: {
@@ -71,12 +73,12 @@ int main() {
 		int i;
 		cout << "Введите размер массива" << endl;
 		cin >> N;
-		for (i = 0; i <= N-1; i++) {
+		for (i = 0; i < N; i++) {
 			A[i] = rand() % 50 - 25;
 			printf("%d ", A[i]);
 			//выводим массив
 		}
-		for (i = 2; i <= N-1; i+=2) {
+		for (i = 2; i < N; i+=2) {
 				if (A[i] < A[i - 2]) {
 					min = A[i];
 				}
@@ -90,12 +92,12 @@ int main() {
 		int i;
 		cout << "Введите размер массива" << endl;
 		cin >> N;
-		for (i = 0; i <= N - 1; i++) {
+		for (i = 0; i < N ; i++) {
 			A[i] = rand() % 50 - 25;
 			printf("%d ", A[i]);
 			//выводим массив
 		}
-		for (i = 1; i <= N - 2; i++) {
+		for (i = 1; i < N - 1; i++) {
 			if (A[i] > A[i - 1] && A[i] > A[i + 1]) max = A[i];
 		}
 		cout << endl << "Локальный максимум равен " << max;
@@ -122,7 +124,7 @@ int main() {
 					}
 				}
 			}
-		}
+		}//
 		
 	}break;
 	default: cout << "Неправильный номер" << endl;

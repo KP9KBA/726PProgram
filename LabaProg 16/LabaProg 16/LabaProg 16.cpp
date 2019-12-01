@@ -15,8 +15,8 @@ int main() {
 		массива все соседние одинаковые элементы, оставив их первые вхождения.*/
 		const int N = 10;
 		int* a = new int [N]; 
-		int i, j;
-		int c, k = 0;
+		int i;
+		int  k = 0;
 		
 		for (i = 0; i < N; i++) {
 			printf("Введите элемент массива a[%d] ", i);
@@ -77,7 +77,7 @@ int main() {
 		перед минимальным и после максимального элемента массива.*/
 		const int N = 13;
 		int arr[N];
-		int i, j;
+		int i;
 		int max, min, maxi=0, mini = 0;
 		for (i = 0; i < N-1; i++) {
 			arr[i] = rand() % 50 - 25;
@@ -135,20 +135,31 @@ int main() {
 		массива вставить элемент с нулевым значением.*/
 		const int n = 10;
 		int* a = new int[n];
-		int i, j;
+		int* b;
+		int i;
 		int k = 0;
-		int n = 10;
 
 		for (i = 0; i < n; i++) {
 			printf("Введите элемент массива a[%d] ", i);
 			scanf_s("%d", &a[i]);
+			
 		}
 		for (i = 0; i < n; i++) {
+			if (a[i] < 0) {
+				int* b = new int[i];
+				b[i] = a[i];
+				b[i++] = 0;
+			}
+		}
+		for (i = 0; i < n + 2; i++) {
+			printf("%d ", b[i]);
+		}
+		/*for (i = 0; i < n; i++) {
 			if (a[i] < 0) {
 				printf("%d %d ", a[i],0);
 			}else
 				printf("%d ", a[i]);
-		}
+		}*/
 
 	} break;
 	case 5: {
@@ -156,7 +167,8 @@ int main() {
 		массива вставить элемент с нулевым значением.*/
 		const int n = 10;
 		int* a = new int[n];
-		int i, j;
+		int* b;
+		int i;
 		int k = 0;
 
 		for (i = 0; i < n; i++) {
@@ -164,12 +176,22 @@ int main() {
 			scanf_s("%d", &a[i]);
 		}
 		for (i = 0; i < n; i++) {
+			if (a[i] < 0) {
+				int* b = new int[i];
+				b[i++] = a[i];
+				b[i] = 0;
+			}
+		}
+		for (i = 0; i < n + 2; i++) {
+			printf("%d ", b[i]);
+		}
+		/*for (i = 0; i < n; i++) {
 			if (a[i] > 0) {
 				printf("%d %d ", 0,a[i]);
 			}
 			else
 				printf("%d ", a[i]);
-		}
+		}*/
 	} break;
 	}
 

@@ -1,6 +1,4 @@
 ﻿  LabaProg 14.cpp
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(27,5): warning C4804: <=: небезопасное использование типа "bool" в операции
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(27,22): warning C4804: <=: небезопасное использование типа "bool" в операции
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(108,7): warning C4101: j: неиспользованная локальная переменная
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(108,10): warning C4101: t: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(110,7): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\LabaProg 14\LabaProg 14.cpp(110,10): warning C4101: t: неиспользованная локальная переменная
   LabaProg 14.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 14\Debug\LabaProg 14.exe
