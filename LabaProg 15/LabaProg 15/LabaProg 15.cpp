@@ -46,8 +46,8 @@ int main() {
 		B(K) равен среднему арифметическому элементов массива A с номерами от 1 до K.*/
 		int A[N];
 		double B[N];
-		int K;
-		int sum = 0;
+		double K = 0 ;
+		double sum = 0;
 		int i;
 		cout << "Массив А" << endl;
 		for (int i = 0; i < N; i++) {
@@ -55,14 +55,14 @@ int main() {
 			printf("%d ", A[i]);
 		}
 		cout << endl << "Массив В" << endl;
-		for (K = 0; K < N; K++) {
+		for (int j = 0; j < N; j++) {
 			sum = 0;
 			for (i = 0; i <= K; i++) {
 				sum += A[i];
 			}
-
-			B[K] = sum / (K+1);
-			printf("%.2f ", B[K]);
+			K++;
+			B[j] = sum / K;
+			printf("%.2f ", B[j]);
 		}
 
 		/*cout << endl << "Массив В" << endl;
@@ -102,6 +102,7 @@ int main() {
 		int A[N];
 		int max = 0, min = 0, imin, imax;
 		for (int i = 0; i <= N - 1; i++) {
+			//A[i] = rand() % 50 - 5;
 			A[i] = rand() % 25 - 25;
 			printf("%d ", A[i]);
 		}

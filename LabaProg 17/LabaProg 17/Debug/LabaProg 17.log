@@ -1,3 +1,2 @@
 ﻿  LabaProg 17.cpp
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(101,12): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
-  LabaProg 17.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\Debug\LabaProg 17.exe
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(129,8): error C2040: b: "int *" отличается по уровням косвенного обращения от "int"
