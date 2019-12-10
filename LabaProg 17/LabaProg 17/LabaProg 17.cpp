@@ -99,11 +99,12 @@ int main() {
 		Поменять местами последнюю серию массива и его серию с номером K*/
 		int N;
 		int l;
-		int K;
+		int k, i;
+		int ind1 = 0, ind2 = 0;
 		cout << "Введите размер массива N: ";
 		cin >> N;
-		int* a = new int[N];
-		int* b = new int[N];
+		int* a = new int[N];//старый массив
+		int* b = new int[N];//новый массив
 		cout << "Введите L: ";
 		cin >> K;
 		for (int i = 0; i < N; i++) {
@@ -112,10 +113,11 @@ int main() {
 		}
 
 		if (K > 0) {
-			l = 0; b[0] = a[0];
-			//for()
-			for (int i = 0; i < N; i++) {
-				cout << b[i] << " ";
+			for (i = 0; i < N; i++) {
+				if (a[i] != a[i]) {//находим число серий
+					k++;
+					ind1 = i;
+				}
 			}
 		}
 		else {

@@ -1,2 +1,8 @@
 ﻿  LabaProg 17.cpp
-C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(129,8): error C2040: b: "int *" отличается по уровням косвенного обращения от "int"
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(138,22): warning C4474: "printf" : для строки формата передано слишком много аргументов
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(138,22): message : заполнители и их параметры ожидают переменное число аргументов в количестве 0, но было предоставлено 1
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(141,15): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(145,23): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "int *"
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(145,23): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "int *"
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\LabaProg 17\LabaProg 17.cpp(172,112): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  LabaProg 17.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 17\Debug\LabaProg 17.exe
