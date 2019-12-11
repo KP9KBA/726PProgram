@@ -1,1 +1,3 @@
-﻿  LabaProg 19.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 19\Debug\LabaProg 19.exe
+﻿  LabaProg 19.cpp
+C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 19\LabaProg 19\LabaProg 19.cpp(179,10): warning C4101: N: неиспользованная локальная переменная
+  LabaProg 19.vcxproj -> C:\Users\Оля\Documents\GitHub\726PProgram\LabaProg 19\Debug\LabaProg 19.exe
