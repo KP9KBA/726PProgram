@@ -1,9 +1,8 @@
 ﻿#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>
-#include <locale.h>
+#include <Math.h>
+#include <windows.h>
+#include <string>
+
 
 using namespace std;
 
@@ -12,13 +11,6 @@ int lenstr(const char* s) {
 	while (*s++)
 		++i;
 	return i;
-}
-char Return_2(char S, int s, char C) {
-	s = S;
-	S = C;
-	C = s;
-	cout << S << " " << S << " ";
-	return 0;
 }
 
 int main() {
@@ -61,36 +53,32 @@ int main() {
 	}break;
 	case 4: {
 		/*Дан символ C и строка S. Удвоить каждое вхождение символа C в строку S*/
-		char C, S[50];
+		char C;
+		string S;
 		cout << "Введите строку ";
 		cin.ignore();
-		cin.getline(S, lenstr(S));
+		std::getline(std::cin,S);
 		cout << "Введите символ ";
 		cin >> C;
-		for (int i = 0; i < lenstr(S); i++) {
-			if (S[i] == C) Return_2(S[i], 1, C);
+		for (int i = S.length()-1;i>=0;i--) {
+			if (S[i] == C) //Return_2(S[i], 1, C);
+				S.insert(i, 1, C);
 			else cout << S[i] << " ";
 		}
 	}break;
 	case 5: {
 		/*Даны строки S и S0. Найти количество вхождений строки S0 в строку S.*/
-		char S0[50], S[50];
+		string S0="", S="";
 		int n = 0;
 		cout << "Введите строку s ";
 		cin.ignore();
-		cin.getline(S, lenstr(S));
+		std::getline(std::cin, S);
 		cout << "Введите строку s0 ";
-		cin.ignore();
-		cin.getline(S0, lenstr(S0));
-		if (lenstr(S) > lenstr(S0)) {
-			for (int i = 0; i < lenstr(S); i++) {
-				if (S[i] == S0[i]) n++;
-			}
-		}
-		else {
-			for (int i = 0; i < lenstr(S0); i++) {
-				if (S[i] == S0[i]) n++;
-			}
+		std::getline(std::cin, S0);
+		while (S.find(S0) >= 0 && S.find(S0) < S.length() + 1)
+		{
+			S.erase(S.find(S0), S0.length());
+			n++;
 		}
 		cout << endl << "Количество вхождений равно " << n << endl;
 	}break;
