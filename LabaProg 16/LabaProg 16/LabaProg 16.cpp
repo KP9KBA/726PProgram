@@ -38,36 +38,38 @@ int main() {
 	case 2: {
 		/*Дан целочисленный массив размера N. Удалить из массива все элементы,
 		встречающиеся ровно два раза, и вывести размер полученного массива и его содержимое.*/
-		int arr[8];
-		int count = 0;
-		int i, j, a;
-		int N = 12;
+		int a[8];
+		int count;
+		int i, j, b = 0, c;
+		int N = 8;
 		for (i = 0; i < N; i++) {
 			printf("Введите элемент массива a[%d] ", i);
-			scanf_s("%d", &arr[i]);
+			scanf_s("%d", &a[i]);
 		}
-
-		for (i = 0; i < N; i++)
+		cout << "\n";
+		for (i = 0; i < N-b; i++)
 		{
-			for (j = 1; j < N; j++)
+			count = 0;
+			for (j = 0; j < N; j++)
 			{
-				if (arr[i] == arr[j])
+				if (a[i] == a[j])//&&i!=j
 					count++;
 			}
 			if (count == 2)
 			{
-				for (a = i; a < N; a++)
+				b++;
+				for (j = i; j < N-1; j++)
 				{
-					arr[a] = arr[a + 2];
+					c = a[j + 1];
+					a[j + 1] = a[j];
+					a[j] = c;
 				}
-				N = N - 2;
 				i--;
 			}
-			count = 0;
 		}
-
-		for (i = 0; i < N; i++)
-			printf("%d ", arr[i]);
+		cout << "Обработанный массив " << endl;
+		for (i = 0; i < N-b; i++)
+			printf("%d ", a[i]);
 
 	} break;
 	case 3: {
@@ -84,7 +86,7 @@ int main() {
 			cin >> a[i];
 		}
 		cout << endl;
-		min = 99; max = -99;
+		min = 9999; max = -9999;
 		for (i = 0; i < N ; i++) {//нахождение макс и мин
 			if (a[i] < min) {
 				min = a[i];
@@ -100,14 +102,14 @@ int main() {
 			{
 				b[i + k] = a[i];
 				b[i + k + 1] = 0;
-				//max++;
+				max++;
 				k++;
 			}
 			else if (a[i] == min)
 			{
 				b[i + k] = 0;
 				b[i + k + 1] = a[i];
-				//min--;
+				min--;
 				k++;
 			}
 			else b[i + k] = a[i];
@@ -177,6 +179,5 @@ int main() {
 		delete[]b;
 	} break;
 	}
-	
-
+	return 0;
 }	

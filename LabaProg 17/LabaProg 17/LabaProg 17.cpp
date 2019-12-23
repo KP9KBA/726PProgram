@@ -91,8 +91,8 @@ int main() {
 		else {
 			cout << "Число должно быть больше нуля. Повторите попытку ";
 		}
-		delete a;
-		delete b;
+		delete[] a;
+		delete[] b;
 	}break;
 	case 3: {
 		/* Дано целое число K (> 0) и целочисленный массив размера N. 
@@ -100,7 +100,7 @@ int main() {
 		int N;
 		int l;
 		int k, i, j;
-		int m, z, c = 0;
+		int m, z, c;
 		cout << "Введите размер массива N: ";
 		cin >> N;
 		int* a = new int[N];//старый массив
@@ -111,9 +111,10 @@ int main() {
 			printf("a[%d] = ", i);
 			cin >> a[i];
 		}
-		m = 1;
+		m = 1;//счетчик колва серий
+		c = 0;//запоминает индекс нужной серии
+		z = (k == 1 ? 1 : 0);//длина номера серии
 		l = 0;
-		z = (k == 1 ? 1 : 0);
 		j = -1;
 		for (i = 1; i < N; i++) {
 			if (a[i - 1] != a[i]) {
@@ -132,10 +133,10 @@ int main() {
 		for (i = l; i < l + z; i++)  b[++j] = a[i];
 
 		for (i = 0; i < N; i++) a[i] = b[i];
-		cout << "Результат:" << endl;
+		cout << "После обмена: " << endl;
 		for (i = 0; i < N; i++)
 		{
-			cout << i + 1 << ": " << a[i] << endl;
+			printf("%d: %d \n", i + 1, a[i]);
 		}
 		delete[]a;
 		delete[]b;
@@ -153,14 +154,15 @@ int main() {
 		int sum = 0;
 		cout << "Введите координаты точек ";
 		for (int i = 0; i < N; i++) {
-			printf("(x,y): ", i);
+			printf("(x,y): ");
 			cin >> a[i] >> b[i];
 			if (a[i] < 0 && b[i]>0 && sqrt(pow(a[i], 2) + pow(b[i], 2)) > sum) {
 				sum = sqrt(pow(a[i], 2) + pow(b[i], 2));
 				j = i;
 			}
 		}
-		if (sum > 0) printf("a[%d] и b[%d] лежат во второй четверти на расстоянии %d", b, b, sum);
+		if (sum > 0) 
+			printf("a[%d] и b[%d] лежат во второй четверти на расстоянии %d", j, j, sum);
 		else cout << "(0,0)" << endl;
 	}break;
 	case 5: {
