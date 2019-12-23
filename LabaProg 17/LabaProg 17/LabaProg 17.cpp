@@ -99,30 +99,46 @@ int main() {
 		Поменять местами последнюю серию массива и его серию с номером K*/
 		int N;
 		int l;
-		int k, i;
-		int ind1 = 0, ind2 = 0;
+		int k, i, j;
+		int m, z, c = 0;
 		cout << "Введите размер массива N: ";
 		cin >> N;
 		int* a = new int[N];//старый массив
 		int* b = new int[N];//новый массив
-		cout << "Введите L: ";
-		cin >> K;
+		cout << "Введите K: ";
+		cin >> k;
 		for (int i = 0; i < N; i++) {
 			printf("a[%d] = ", i);
 			cin >> a[i];
 		}
-
-		if (K > 0) {
-			for (i = 0; i < N; i++) {
-				if (a[i] != a[i]) {//находим число серий
-					k++;
-					ind1 = i;
-				}
+		m = 1;
+		l = 0;
+		z = (k == 1 ? 1 : 0);
+		j = -1;
+		for (i = 1; i < N; i++) {
+			if (a[i - 1] != a[i]) {
+				m++;
+				if (m == k) l = i;
+				c = i;
 			}
+			if (m == k) z++;
 		}
-		else {
-			cout << "Число должно быть больше нуля. Повторите попытку ";
+		for (i = 0; i < l; i++)  b[++j] = a[i];
+
+		for (i = c; i < N; i++) b[++j] = a[i];
+
+		for (i = l + z; i < c; i++) b[++j] = a[i];
+
+		for (i = l; i < l + z; i++)  b[++j] = a[i];
+
+		for (i = 0; i < N; i++) a[i] = b[i];
+		cout << "Результат:" << endl;
+		for (i = 0; i < N; i++)
+		{
+			cout << i + 1 << ": " << a[i] << endl;
 		}
+		delete[]a;
+		delete[]b;
 		//ДОДЕЛАТЬ!
 	}break;
 	case 4: {
